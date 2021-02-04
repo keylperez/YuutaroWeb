@@ -8,6 +8,11 @@
 1800px + :      BIG DESKTOP
 */
 @media only screen and (max-width: 1200px) {
+  body {
+    background-size: 1200px;
+    background-position-y: bottom;
+    background-position-x: right;
+  }
   header {
     font-size: 120%;
     width: 70%;
