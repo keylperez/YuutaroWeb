@@ -1,5 +1,6 @@
 import ClipboardJS from "clipboard";
 
+
 var clipboard = new ClipboardJS(".btn");
 alert("Copied the text: " + copyText.value);
 

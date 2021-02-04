@@ -1,0 +1,38 @@
+/*
+0 - 600px:    PHONE
+600 - 900px:   TABLET PORTRAIT
+900 - 1200px:   TABLET LANDSCAPE
+
+[1200 - 1800] is where our normal styles apply
+
+1800px + :      BIG DESKTOP
+*/
+/* @media only screen and (max-width: 1200px) {
+  header {
+    font-size: 120%;
+    width: 70%;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-position-x: -550px;
+  }
+  header {
+    font-size: 150%;
+    width: 80%;
+    margin-top: 50px;
+  }
+  .ytEmbed {
+    height: auto;
+    width: 250px;
+  }
+  .col {
+    padding-right: 10px;
+    width: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+} */

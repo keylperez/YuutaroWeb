@@ -16,6 +16,14 @@ header {
   text-align: left;
 }
 
+header p {
+  line-height: 1.7;
+}
+
+header span {
+  display: inline-block;
+}
+
 .socialImg {
   height: auto;
   width: 50px;
@@ -44,7 +52,7 @@ a {
   color: purple;
 }
 
-td {
+col {
   padding-right: 42px;
   padding-bottom: 30px;
 }
@@ -55,4 +63,22 @@ button {
   background: none;
   outline: none;
   cursor: pointer;
+}
+
+span.hidden {
+  display: none;
+}
+
+.ytEmbed {
+  width: 426px;
+  height: 240px;
+}
+
+.spotifyEmbed {
+  width: 426px;
+  height: 380px;
+}
+
+.Embeds {
+  object-fit: cover;
 }
