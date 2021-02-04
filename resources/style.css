@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-color: #222f3a;
   color: #ffffff;
   font-family: "Mulish", sans-serif;
   margin-left: 50px;
@@ -52,9 +53,8 @@ a {
   color: purple;
 }
 
-col {
-  padding-right: 42px;
-  padding-bottom: 30px;
+.col {
+  width: 430px;
 }
 
 button {
@@ -81,4 +81,8 @@ span.hidden {
 
 .Embeds {
   object-fit: cover;
+}
+
+.row {
+  width: fit-content;
 }
