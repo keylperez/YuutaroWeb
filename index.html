@@ -76,7 +76,7 @@
             </a>
         </li>
         <li class="socialLinks" id="Discord">
-            <button class="btn" data-clipboard-text="Keyl#9680">
+            <button class="btn" data-clipboard-text="Keyl#9680" data-toggle="tooltip" title="Copy to Clipboard">
                 <img src="resources/images/discord.jpg" alt="Discord" class="socialImg">
             </button>
             <!-- <span title="Keyl#9680">
@@ -114,6 +114,20 @@
     <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
     <script>
         var clipboard = new ClipboardJS('.btn');
+        alert("Copied the text: " + copyText.value);
+        
+        clipboard.on('success', function (e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+        });
+
+        clipboard.on('error', function (e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        });
     </script>
 </body>
 </html>
