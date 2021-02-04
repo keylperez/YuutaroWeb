@@ -7,7 +7,25 @@
     <link rel="icon" href="resources/images/IMG_20210124_203606_361.jpg">
     <link rel="stylesheet" href="resources/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
+    <script>
+        var btns = document.querySelectorAll('button');
+        var clipboard = new ClipboardJS('btns');
+
+        clipboard.on('success', function(e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+
+            e.clearSelection();
+        });
+
+        clipboard.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -76,12 +94,12 @@
             </a>
         </li>
         <li class="socialLinks" id="Discord">
-            <button onclick="myFunction()">
+            <!-- <button data-clipboard-text="Keyl#9680">
                 <img src="resources/images/discord.jpg" alt="Discord" class="socialImg">
-            </button>
-            <!-- <span title="Keyl#9680">
+            </button> -->
+            <span title="Keyl#9680">
                 <img src="resources/images/discord.jpg" alt="Discord" class="socialImg">
-            </span> -->
+            </span>
         </li>
         <li class="socialLinks" id="Spotify">
             <a href="https://open.spotify.com/user/8iswiy3zt39g2km9ba4nb689a?si=xcuO2j_dTL2Onn9Uf4dGrQ">
@@ -111,13 +129,5 @@
             <br><span style="color: red;">Please understand the joke when I said hello.</span>
         </h6>
     </footer>
-    <script>
-        function myFunction() {
-          var copyText = "Keyl#9680";
-          copyText.select();
-          document.execCommand("copy");
-          alert("Copied the text: " + copyText.value);
-        }
-        </script>
 </body>
 </html>

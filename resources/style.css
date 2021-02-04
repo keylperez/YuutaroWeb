@@ -50,5 +50,9 @@ td {
 }
 
 button {
-  background-color: ;
+  border: none;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
 }
