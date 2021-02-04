@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="resources/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <script defer src="resources/script.js"></script>
+    <!-- <script src="node_modules/clipboard/dist/clipboard.min.js"></script> -->
 </head>
 <body>
     <header>
@@ -76,7 +78,7 @@
             </a>
         </li>
         <li class="socialLinks" id="Discord">
-            <button class="btn" data-clipboard-text="Keyl#9680" title="Copy to Clipboard">
+            <button class="btn" data-clipboard-text="Keyl#9680" title="Keyl#9680">
                 <img src="resources/images/discord.jpg" alt="Discord" class="socialImg">
             </button>
             <!-- <span title="Keyl#9680">
@@ -111,23 +113,5 @@
             <br><span style="color: red;">Please understand the joke when I said hello.</span>
         </h6>
     </footer>
-    <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
-    <script>
-        var clipboard = new ClipboardJS('.btn');
-        alert("Copied the text: " + copyText.value);
-        
-        clipboard.on('success', function (e) {
-        console.info('Action:', e.action);
-        console.info('Text:', e.text);
-        console.info('Trigger:', e.trigger);
-
-        e.clearSelection();
-        });
-
-        clipboard.on('error', function (e) {
-        console.error('Action:', e.action);
-        console.error('Trigger:', e.trigger);
-        });
-    </script>
 </body>
 </html>
