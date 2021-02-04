@@ -2,11 +2,12 @@ body {
   background-image: url("images/levi_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: #ffffff;
   font-family: "Mulish", sans-serif;
   margin-left: 50px;
   overflow: auto;
-  width: 800px;
+  width: 900px;
 }
 
 header {
@@ -41,4 +42,13 @@ ul {
 a {
   text-decoration: none;
   color: purple;
+}
+
+td {
+  padding-right: 42px;
+  padding-bottom: 30px;
+}
+
+button {
+  background-color: ;
 }

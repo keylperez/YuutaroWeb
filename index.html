@@ -34,8 +34,35 @@
             Idk what else to share so that's a short summary of me.
         </p>
     </header>
-    <br>
-    <br>
+    <br><br>
+    <h3>Song Recommendations:</h3>
+    <table>
+        <tr>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/PlfM28lJGEk" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/Vawlw-k7Xy8" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/b8W_AKNOZ7I" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/x90WLRa5uGo" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/QbJ59BM5T_k" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/gaQcpCDX5wE" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/_DfQC5qHhbo" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            <td><iframe width="426" height="240" src="https://www.youtube.com/embed/rX2iFcmJyzw" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://open.spotify.com/embed/playlist/1t7ey68yZoiE1PlABA6Ua8" width="426" height="380" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe></td>
+            <td><iframe src="https://open.spotify.com/embed/playlist/695Uv4Mw33rS8j7KigwIsB" width="426" height="380" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://open.spotify.com/embed/playlist/6IgGJ23ntZ7iQF8kLCgsM5" width="426" height="380" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe></td>
+            <td><iframe src="https://open.spotify.com/embed/playlist/5wVfRg2IENXrxhoSTFVOvj" width="426" height="380" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe></td>
+        </tr>
+    </table>
+    <br><br>
     <h3>Social Media Links for Stalkers:</h3>
     <ul style="display: inline-block;">
         <li class="socialLinks" id="Facebook">
@@ -49,9 +76,12 @@
             </a>
         </li>
         <li class="socialLinks" id="Discord">
-            <span title="Keyl#9680">
+            <button onclick="myFunction()">
                 <img src="resources/images/discord.jpg" alt="Discord" class="socialImg">
-            </span>
+            </button>
+            <!-- <span title="Keyl#9680">
+                <img src="resources/images/discord.jpg" alt="Discord" class="socialImg">
+            </span> -->
         </li>
         <li class="socialLinks" id="Spotify">
             <a href="https://open.spotify.com/user/8iswiy3zt39g2km9ba4nb689a?si=xcuO2j_dTL2Onn9Uf4dGrQ">
@@ -81,5 +111,13 @@
             <br><span style="color: red;">Please understand the joke when I said hello.</span>
         </h6>
     </footer>
+    <script>
+        function myFunction() {
+          var copyText = "Keyl#9680";
+          copyText.select();
+          document.execCommand("copy");
+          alert("Copied the text: " + copyText.value);
+        }
+        </script>
 </body>
 </html>
